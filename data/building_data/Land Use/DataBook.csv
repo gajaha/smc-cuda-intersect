@@ -1,0 +1,65 @@
+﻿Land Use Code,Simple Usage,Usage,Comment,Building
+1111,residential,residential,single family detached,y
+1112,residential,residential,single family attached,y
+1130,residential,residential,multi family (does not include mixed use),y
+1140,residential,residential,mobile home park,y
+1151,residential,residential,"common open space, not a building",n
+1211,retail,retail,shopping mall,y
+1212,retail,retail,regional/community retail center,y
+1214,retail,retail,single large-site retail,y
+1215,office,mixed retail/office,urban mix of retail and office/professional,y
+1216,residential,mixed retail/residential,urban mix of retail and residential; up to 4 stories (rest is predominantly residential and classified as 1130 multi family),y
+1220,office,office,office,y
+1240,theater,theater,cultural/entertainment -- basically everything one could think of,y
+1250,hotel,hotel,"hotel/motel, including parking",y
+1310,residential,medical,"hospitals, nursing homes, long-term care",y
+1321,office,school,k-12 schools,y
+1322,office,school,universities and colleges,y
+1330,office,office,government administration,y
+1340,residential,residential,prison and correctional facilities,y
+1350,office,church,religious,y
+1360,exclude,church,"cemetery, includes chapels and mausoleums",depends
+1370,office,community centers,"non-profit buildings, like YMCS, YWCS, Salvation army, …",y
+1380,office,office,national lab,y
+1410,industrial,industrial,mineral extraction,y
+1420,industrial,industrial,general industrial like small manufacturing or warehousing,y
+1431,industrial,industrial,manufacturing/processing,y
+1432,industrial,industrial,warehousing/distribution,y
+1433,industrial,industrial,"flexible/indeterminate, often mix with office space",y
+1450,industrial,industrial,storage,y
+1511,exclude,other,rail,depends
+1512,exclude,other,road,n
+1520,exclude,other,other transportation,depends
+1530,exclude,other,"aircraft transportation, includes airfields",depends
+1540,exclude,garage,parking,y
+1550,exclude,other,"communication, including towers etc",depends
+1561,exclude,other,utilities,depends
+1562,exclude,other,wastewater treatment,depends
+1563,exclude,other,landfill,n
+1564,exclude,other,other utility; most listed are energy production related,depends
+1565,exclude,other,stormwater management,n
+1570,industrial,other,intermodal facilities for freight transfer,depends
+2000,exclude,agriculture,"farmland etc; other uses noted in the ""PLATTED"" modifier",n
+3100,exclude,other,"open space, recreation",n
+3200,exclude,other,golf course,n
+3300,exclude,other,"open space, conservation",n
+3400,exclude,other,non-public open space,n
+3500,exclude,other,trail or greenway,n
+4100,exclude,vacant,"vacant/undeveloped, no specified future use",n
+4110,exclude,vacant,vacant residential,n
+4120,exclude,vacant,vacant commercial,n
+4130,exclude,vacant,vacant industrial,n
+4140,exclude,vacant,vacant other,n
+4200,exclude,other,"under construction, no speficied use",depends
+4210,residential,residential,"under construction, residential",depends
+4220,commercial,commercial,"under construction, commercial",depends
+4230,industrial,industrial,"under construction, industrial",depends
+4240,exclude,other,"under construction, other",depends
+5000,exclude,other,water,n
+6000,exclude,other,non-parcel area,n
+6100,exclude,other,"non-parcel area, open space",n
+6200,exclude,other,"non-parcel area, water",n
+6300,exclude,other,"non-parcel area, right of way (?) or road",n
+6400,exclude,other,non-parcel NEC,n
+9999,exclude,other,not classifiablel,n
+,,,,
