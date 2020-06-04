@@ -4,24 +4,61 @@ import pandas as pd
 import xarray as xr
 import geopandas as gpd
 import matplotlib.pyplot as plt
+import json
+import numpy as np
 
-##Read simulation snapshot departure time.
-sim_snap = pd.read_csv("/Users/vsundar/Documents/personal/smc/smc-cuda-intersect/data/vehicle_data/Simulation_Snapshot/Snapshot_small.csv")
-def start_end(sim_snap_df:str,sim_start,sim_end):
-sim_snap_df = sim_snap.groupby('VEHICLE')
-sim_start = sim_snap_df.head(1)
-sim_end = sim_snap_df.tail(1)
-return sim_start,sim_end
+##Read simulation snapshot departure and arrival time. 
+# sim_snap = pd.read_csv("/Users/vsundar/Documents/personal/smc/smc-cuda-intersect/data/vehicle_data/Simulation_Snapshot/Snapshot_small.csv")
+def start_df(sim_snap:str):
+    sim_snap = pd.read_csv(sim_nap)
+    sim_snap_df = sim_snap.groupby('VEHICLE')
+    sim_start = pd.DataFrame(sim_snap_df.head(1))
+    sim_start.X_COORD = pd.to_numeric(sim_start.X_COORD)
+    sim_start.Y_COORD = pd.to_numeric(sim_start.Y_COORD)
+return sim_start
+
+def end_df(sim_snap:str):
+    sim_snap = pd.read_csv(sim_nap)
+    sim_snap_df = sim_snap.groupby('VEHICLE')
+    sim_end = pd.DataFrame(sim_snap_df.tail(1))
+    sim_end.X_COORD = pd.to_numeric(sim_end.X_COORD)
+    sim_end.Y_COORD = pd.to_numeric(sim_end.Y_COORD)
+return sim_end
+
+##Calculate distance metrics and return vehicle dataframe with agent mapped toi building. 
+# This can be extended to a probabilistic metric.
+# Calculate Euclidean distances.
+
+def agent_to_building(sim_start,sim_end,building_map):
+    building_map = gpd.read_file(building_map)
+    building_map = building_map.to_crs("EPSG:26916")
+    building_map = building_map.assign(centroid=building_map.centroid)
+    sim_start_gdf = gpd.GeoDataFrame(sim_start, geometry=gpd.points_from_xy(sim_start.X_COORD,sim_start.Y_COORD))
+    sim_start_gdf.crs="EPSG:26916"
+
+    ##Each vehicle maps to multiple buiuldings. find min distance b/w building and vehicle for start and end times.
+    min_dist = np.empty(len(sim_start_gdf))
+    for i, agent in enumerate(sim_start_gdf.geometry):
+        min_dist[i] = np.min([agent.distance(centroid) for centroid in building_map.centroid])
+    sim_start_gdf['min_dist_to_building_centroid'] = min_dist
+
 
 ##Generate plots.Visualize start and end locations.
-def plot_start_end(sim_start,sim_end):
+def plot_start_end(sim_start:str,sim_end:str,building_map:str):
+    building_map = gpd.read_file("/Users/vsundar/Documents/personal/smc/smc-cuda-intersect/data/building_data/Building_Footprints/  ChicagoLoop_attr.geojson")
+    building_map= building_map.to_crs("EPSG:26916")
+    fig,ax = plt.subplots()
+    building_map.plot(ax=ax)
+    minx, miny, maxx, maxy = building_map.geometry.total_bounds
+    sim_start_gdf = gpd.GeoDataFrame(sim_start, geometry=gpd.points_from_xy(sim_start.X_COORD,sim_start.Y_COORD))
+    ##set layer crs
+    sim_start_gdf.crs="EPSG:26916"
+    sim_start_gdf.plot(ax=ax, marker='o', color='red', markersize=2)
+    ax.set_xlim(minx - 100, maxx + 100) # added/substracted value is to give some margin around total bounds
+    ax.set_ylim(miny - 100, maxy + 100)
 
-building_map = pd.read_json("/Users/vsundar/Documents/personal/smc/smc-cuda-intersect/data/building_data/Building_Footprints/ChicagoLoop.geojson")
-fig,ax = plt.subplots(figsize = (15,15))
-building_map.plot(ax=ax)
-sim_start_gdf = gpd.GeoDataFrame(sim_start)
-##set layer crs
-sim_start_gdf.crs = {'init':'epsg:26916'}  
+plt.show()
+
 
 
 
