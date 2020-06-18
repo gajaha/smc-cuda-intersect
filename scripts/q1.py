@@ -63,7 +63,7 @@ minx, miny, maxx, maxy = building_map.geometry.total_bounds
 sim_start_gdf = gpd.GeoDataFrame(sim_start, geometry=gpd.points_from_xy(sim_start.X_COORD,sim_start.Y_COORD))
 ##set layer crs
 sim_start_gdf.crs="EPSG:26916"
-sim_start_gdf.plot(ax=ax, marker='o', color='red', markersize=2)
+sim_start.plot(ax=ax, marker='o', color='red', markersize=2)
 ax.set_xlim(minx - 100, maxx + 100) # added/substracted value is to give some margin around total bounds
 ax.set_ylim(miny - 100, maxy + 100)
 
