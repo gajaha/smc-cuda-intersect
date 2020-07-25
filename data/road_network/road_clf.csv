@@ -1,0 +1,223 @@
+CFCC Description
+A00 Road  major and minor categories unknown
+A01 Road  unseparated
+A02 Road  unseparated  in tunnel
+A03 Road  unseparated  underpassing
+A04 Road  unseparated  with rail line in center
+A05 Road  separated
+A06 Road  separated  in tunnel
+A07 Road  separated  underpassing
+A08 Road  separated  with rail line in center
+A10 Primary road with limited access or interstate highway  major category
+A11 Primary road with limited access or interstate highway  unseparated
+A12 Primary road with limited access or interstate highway  unseparated  in tunnel
+A13 Primary road with limited access or interstate highway  unseparated  underpassing
+A14 Primary road with limited access or interstate highway  unseparated  with rail line in center
+A15 Primary road with limited access or interstate highway  separated
+A16 Primary road with limited access or interstate highway  separated  in tunnel
+A17 Primary road with limited access or interstate highway  separated  underpassing
+A18 Primary road with limited access or interstate highway  separated  with rail line in center
+A20 Primary road without limited access  U.S. and state highway  major category
+A21 Primary road without limited access  U.S. and state highways  unseparated
+A22 Primary road without limited access  U.S. and state highways  unseparated  in tunnel
+A23 Primary road without limited access  U.S. and state highways  unseparated  underpassing
+A24 Primary road without limited access  U.S. and state highways  unseparated  with rail line in center
+A25 Primary road without limited access  U.S. and state highways  separated
+A26 Primary road without limited access  U.S. and state highways  separated  in tunnel
+A27 Primary road without limited access  U.S. and state highways  separated  underpassing
+A28 Primary road without limited access  U.S. and state highways  separated  with rail line in center
+A30 Secondary and connecting road  state and county highways  major category
+A31 Secondary and connecting road  state and county highways  unseparated
+A32 Secondary and connecting road  state and county highways  unseparated  in tunnel
+A33 Secondary and connecting road  state and county highways  unseparated  underpassing
+A34 Secondary and connecting road  state and county highways  unseparated  with rail line in center
+A35 Secondary and connecting road  state and county highways  separated
+A36 Secondary and connecting road  state and county highways  separated  in tunnel
+A37 Secondary and connecting road  state and county highways  separated  underpassing
+A38 Secondary and connecting road  state and county highway  separated  with rail line in center
+A40 Local  neighborhood  and rural road  city street  major category
+A41 Local  neighborhood  and rural road  city street  unseparated
+A42 Local  neighborhood  and rural road  city street  unseparated  in tunnel
+A43 Local  neighborhood  and rural road  city street  unseparated  underpassing
+A44 Local  neighborhood  and rural road  city street  unseparated  with rail line in center
+A45 Local  neighborhood  and rural road  city street  separated
+A46 Local  neighborhood  and rural road  city street  separated  in tunnel
+A47 Local  neighborhood  and rural road  city street  separated  underpassing
+A48 Local  neighborhood  and rural road  city street  separated  with rail line in center
+A50 Vehicular trail  road passable only by four-wheel drive (4WD) vehicle  major category
+A51 Vehicular trail  road passable only by 4WD vehicle  unseparated
+A52 Vehicular trail  road passable only by 4WD vehicle  unseparated  in tunnel
+A53 Vehicular trail  road passable only by 4WD vehicle  unseparated  underpassing
+A60 Special road feature  major category used when the minor category could not be determined
+A61 Cul-de-sac  the closed end of a road that forms a loop or turn around
+A62 Traffic circle  the portion of a road or intersection of roads that form a roundabout
+A63 Access ramp  the portion of a road that forms a cloverleaf or limited access interchange
+A64 Service drive  road that provides access to businesses  facilities  and rest areas along limited-access highway
+A65 Ferry crossing  the representation of a route over water that connects roads on opposite shores
+A66 Ferry crossing  Passenger  Year Round
+A68 Ferry Crossing  Vehicular  Seasonal
+A69 Ferry Crossing  Vehicular  Year-Round
+A70 Other thoroughfare  major category used when the minor category could not be determined
+A71 Walkway  nearly level road for pedestrians  usually unnamed
+A72 Stairway  stepped road for pedestrians  usually unnamed
+A73 Alley  road for service vehicles  usually unnamed  located at the rear of buildings and property
+A74 Driveway or service road  usually privately owned and unnamed  used as access to residences  etc.  or as access to logging areas  etc.
+A75 Road  Parking Area
+B00 Railroad  major and minor categories unknown
+B01 Railroad track  not in tunnel or underpassing
+B02 Railroad track  in tunnel
+B03 Railroad track  underpassing
+B10 Railroad main track  major category
+B11 Railroad main track  not in tunnel or underpassing
+B12 Railroad main track  in tunnel
+B13 Railroad main track  underpassing
+B20 Railroad spur track  major category
+B21 Railroad spur track  not in tunnel or underpassing
+B22 Railroad spur track  in tunnel
+B23 Railroad spur track  underpassing
+B30 Railroad yard track  major category
+B31 Railroad yard track  not in tunnel or underpassing
+B32 Railroad yard track  in tunnel
+B33 Railroad yard track  underpassing
+B40 Railroad ferry crossing  route over water used by ships carrying train cars to connecting railroads on opposite shores  major category
+B42 Subway or Metroline
+B50 Other rail line; major category used alone when the minor category could not be determined
+B51 Carline  a track for street cars  trolleys  and other mass transit rail systems
+B52 Cog railroad  incline railway  or logging tram
+C00 Miscellaneous ground transportation  not road or railroad; major and minor categories unknown
+C10 Pipeline  major category used alone
+C20 Power transmission line  major category used alone
+C30 Other ground transportation that is not a pipeline or a power transmission line  major category
+C31 Aerial tramway  monorail  or ski lift
+D00 Landmark  major and minor categories unknown
+D01 Tele Atlas code for a building that is not classified
+D10 Military installation or reservation; major category used alone
+D20 Multihousehold or transient quarters; major category used alone when minor category not determined
+D21 Apartment building or complex
+D22 Rooming or boarding house
+D23 Trailer court or mobile home park
+D24 Marina
+D25 Crew-of-vessel area
+D26 Housing facility for workers
+D27 Hotel  motel  resort  spa  hostel  YMCA  or YWCA
+D28 Campground
+D29 Shelter or mission
+D30 Custodial facility; major category used alone when the minor category could not be determined
+D31 Hospital
+D32 Halfway house
+D33 Nursing home  retirement home  or home for the aged
+D34 County home or poor farm
+D35 Orphanage
+D36 Jail or detention center
+D37 Federal penitentiary  state prison  or prison farm
+D40 Educational or religious institution  major category
+D41 Sorority or fraternity
+D42 Convent or monastery
+D43 Educational institution  including academy  school  college  and university
+D44 Religious institution  including church  synagogue  seminary  temple  and mosque
+D50 Transportation terminal; major category used alone when the minor category could not be determined
+D51 Airport or airfield
+D52 Train station
+D53 Bus terminal
+D54 Marine terminal
+D55 Seaplane anchorage
+D56 Subway or metro station
+D57 Parking Area Boundary
+D58 Tele Atlas airport property boundary
+D59 Tele Atlas airport runway
+D60 Employment center; major category used alone when the minor category could not be determined
+D61 Shopping center or major retail center
+D62 Industrial building or industrial park
+D63 Office building or office park
+D64 Amusement center
+D65 Government center
+D66 Other employment center
+D67 Stadium
+D70 Tower; major category used alone when minor category could not be determined
+D71 Lookout tower
+D80 Open space; major category used alone when the minor category could not be determined
+D81 Golf course
+D82 Cemetery
+D83 National Park Service land
+D84 National forest or other Federal land
+D85 state or local park or forest
+D89 Local Park or Recreation Area
+D90 Special purpose landmark; major category used alone when the minor category could not be determined
+D91 Post office box ZIP Code(R)
+D92 Point of interest (POI)
+D93 Fire Department
+D94 Police Station
+D95 Library
+D96 City/Town Hall
+E00 Physical feature  tangible but not transportation or hydrographic; major and minor categories unknown
+E10 Fence line locating a visible and permanent fence between separately identified property
+E20 Topographic feature; major category used when the minor category could not be determined
+E21 Ridge line  the line of highest elevation of a linear mountain
+E22 Mountain peak  the point of highest elevation of a mountain
+E23 Island  identified by name
+E24 Levee  an embankment  as of earth or concrete  used to prevent a river or other body of water from overflowing
+F00 Nonvisible boundary  major and minor categories unknown
+F10 Nonvisible jurisdictional boundary of a legal or administrative entity  major category
+F11 Offset boundary of a legal or administrative entity
+F12 Corridor boundary of a legal or administrative entity
+F13 Nonvisible superseded 2000 governmental unit boundary
+F14 Superseded 1990 legal boundary
+F15 Superseded 1990 legal boundary  corrected through post census process
+F16 Superseded legal boundary  current at the time of the 1997 Economic Census
+F17 Nonvisible State Legislative District boundary
+F18 Nonvisible Congressional District boundary
+F19 Nonvisible corrected 2000 governmental unit boundary
+F20 Nonvisible feature for data base topology; major category used when the minor category could not be determined
+F21 Automated feature extension to lengthen existing physical feature
+F22 Irregular feature extension  determined manually  to lengthen existing physical feature
+F23 Closure extension to complete data base topological closure between extremely close features
+F24 Nonvisible separation line used with offset and corridor boundaries
+F25 Nonvisible centerline of area enclosed by corridor boundary
+F30 Point-to-point line  follows a line of sight and should not cross any visible feature
+F40 Property line  nonvisible boundary of either public or private lands  e.g.  a park boundary
+F50 ZIP Code(R) tabulation boundary  used in delineating ZIP Code(R) Tabulation Areas
+F60 Map edge  now removed  used during data base creation
+F70 Statistical boundary; major category used when the minor category could not be determined
+F71 1980 statistical boundary
+F72 1990 statistical boundary  used to hold collection and tabulation census block boundaries not represented by existing physical features
+F73 1990 statistical boundary and extent of land use  it is not classifiable as a physical feature
+F74 1990 statistical boundary  used to hold a tabulation census block boundary not represented by an existing physical feature
+F80 Nonvisible other tabulation boundary  major category used when the minor category could not be determined
+F81 School district tabulation boundary
+F82 Special census tabulation boundary
+F83 Census 2000 collection block boundary; used to hold Census collection block boundaries not represented by existing physical features
+F84 Census 2000 statistical area boundary; used to hold Census statistical area boundaries not represented by existing physical features
+F85 Census 2000 tabulation block boundary; used to hold Census tabulation block boundaries not represented by existing physical features
+F86 Internal U.S. Census Bureau use
+F87 Oregon urban growth area boundary
+F88 Current statistical area boundary
+H00 Water feature  classification unknown or not elsewhere classified
+H01 Shoreline of perennial water feature
+H02 Shoreline of intermittent water feature
+H10 Stream boundary  major category
+H11 Perennial stream or river
+H12 Intermittent stream  river  or wash
+H13 Braided stream or river
+H20 Canal  ditch  or aqueduct  major category
+H21 Perennial canal  ditch  or aqueduct
+H22 Intermittent canal  ditch  or aqueduct
+H30 Lake or pond; major category used when the minor category could not be determined
+H31 Perennial lake or pond
+H32 Intermittent lake or pond
+H40 Reservoir; major category used when the minor category could not be determined
+H41 Perennial reservoir
+H42 Intermittent reservoir
+H50 Bay  estuary  gulf  sound  sea  or ocean; major category used when the minor category could not be determined
+H51 Bay  estuary  gulf  or sound
+H53 Sea or ocean
+H59 Tele Atlas Shoreline
+H60 Gravel pit or quarry filled with water
+H70 Nonvisible water area definition boundary; used to separate named water areas; major category
+H71 USGS closure line  used as maritime shoreline
+H72 Census water centerline  computed to use as median positional boundary
+H73 Census water boundary  international in waterways or at 12-mile limit  used as area measurement line
+H74 Census water boundary  separates inland from coastal or Great Lakes  used as area measurement line
+H75 Census water boundary  separates coastal from territorial sea at 3-mile limit  used as area measurement line
+H80 Special water feature  major category used when the minor category could not be determined
+H81 Glacier
+X00 Feature not yet classified
